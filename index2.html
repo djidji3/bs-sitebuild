@@ -10,33 +10,68 @@
     <!-- font-awesome sajat regisztracios koddal -->
     <script src="https://kit.fontawesome.com/241905995e.js" crossorigin="anonymous"></script>
 
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>bs-sitebuild</title>
     <style>
+        /* google fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+        .nav-item {
+            font-family: 'Catamaran', helvetica, arial, sans-serif;
+        }
+        a.navbar-brand:hover {
+            color: white;
+        }
+
+        .h3 {
+            font-family: 'Catamaran', helvetica, arial, sans-serif;
+        }
+
+        .btn {
+            font-family: 'Lato', helvetica, arial, sans-serif;
+        }
+
+        .nav-link {
+            font-family: 'Lato', helvetica, arial, sans-serif;
+        }
+
+        p {
+            font-family: 'Mulish', helvetica, arial, sans-serif;
+        }
+
         .section1 {
             background-image: url("/bs-sitebuild_img/backgroun-image.jpg");
             background: linear-gradient(to right, #ff0066 0%, #b42ae2 100%);
         }
-        
+
         .phone--img1 {
             width: 350px;
             position: relative;
         }
-        
+
         .phone__inside-img1 {
             width: 305px;
             position: relative;
             top: -1px;
             left: -330px;
         }
-        
+
         .section2 {
             background-color: rgb(252, 201, 88);
             padding-top: 160px;
             padding-bottom: 110px;
         }
+
+        footer {
+            font-family: 'Mulish', helvetica, arial, sans-serif;
+        }
+     
     </style>
 </head>
 
@@ -44,23 +79,24 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- --------------------------------------NAVBAR------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <a class="navbar-brand" href="/index.html">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white mb-5">
+        <a class="navbar-brand text-warning" href="/index.html">Start Bootstrap</a>
+        <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse" data-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <span class="navbar-toggler-icon mr-1"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Download<span class="sr-only">(jelenlegi)</span></a>
+                    <a class="nav-link" href="#discover">Download<span class="sr-only">(jelenlegi)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#unlimited">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="#welove">Contacts</a>
                 </li>
             </ul>
         </div>
@@ -70,28 +106,27 @@
     <!-- -------------------------------------------------SECTION1 csak mobilon jelenik meg---------------------------------- -->
     <section>
         <div class="container-fluid section1">
-            <div class="row d-lg-none text-center text-white pt-5">
-                <div class="col-12"> New Age is an app landing page that </div>
+            <div class="row d-lg-none text-center text-white pt-5 mt-5">
+                <div class="col-12 h3"> New Age is an app landing page that </div>
 
-                <div class="col-12"> will help you beautifully showcase </div>
+                <div class="col-12 h3"> will help you beautifully showcase </div>
 
-                <div class="col-12"> your new mobile app, or anything else! </div>
+                <div class="col-12 h3"> your new mobile app, or anything else! </div>
 
                 <div class="row">
-                    <div class="col-12"><a class="btn btn-outline-light m-5 rounded-pill" href="#" role="button">START NOW FOR FREE</a> </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <img src="/bs-sitebuild_img/phone.png" class="img-fluid phone--img1" alt="phone">
-                        <!--  <img src="/bs-sitebuild_img/demo-screen-1.jpg" class="img-fluid phone__inside-img1" alt="phone"> -->
-                    </div>
+                    <div class="col-12"><a class="btn btn-outline-light m-5 rounded-pill" href="#" role="button">START
+                            NOW FOR FREE</a> </div>
+
+                    <img src="/bs-sitebuild_img/phone.png" class="img-fluid phone--img1" alt="phone">
+                    <!--  <img src="/bs-sitebuild_img/demo-screen-1.jpg" class="img-fluid phone__inside-img1" alt="phone"> -->
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- -------------------------------------------------SECTION2 Discover resz------------------------------------------- -->
-    <section class="section2">
+    <section class="section2" id="discover">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-12 display-4">Discover what all the</div>
@@ -104,10 +139,12 @@
                 <div class="col-lg-4">
                     <div class="row">
                         <div class="col-lg-6">
-                            <a class="d-flex justify-content-center pr-0" href="#" role="button"><img src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
+                            <a class="d-flex justify-content-center pr-0" href="#" role="button"><img
+                                    src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
                         </div>
                         <div class="col-lg-6">
-                            <a class="d-flex justify-content-center pl-0" href="#" role="button"><img src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
+                            <a class="d-flex justify-content-center pl-0" href="#" role="button"><img
+                                    src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +155,7 @@
 
     <!-- -------------------------------------------------SECTION3 Unlimited resz------------------------------------------------------ -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid" id="unlimited">
             <div class="row">
                 <h1 class="display-4 text-center">Unlimited Features,</h1>
                 <h1 class="display-4 text-center mb-4"> Unlimited Fun</h1>
@@ -129,7 +166,8 @@
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-lg-4">
-                            <img src="/bs-sitebuild_img/phone.png" class="img-fluid img-thumbnail phone--img2" alt="phone">
+                            <img src="/bs-sitebuild_img/phone.png" class="img-fluid img-thumbnail phone--img2"
+                                alt="phone">
                         </div>
                         <div class="col-lg-8">
                             <div class="row">
@@ -198,13 +236,16 @@
 
                     <div class="col-md-4 mb-4 mb-md-0 ">
                         <address>
-                    Djidji Kft 2021 All Rights Reserverd
-                </address>
+                            Djidji Kft 2021 All Rights Reserverd
+                        </address>
 
                         <nav class="nav justify-content-center justify-content-md-start ">
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook "> Privacy </a>
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook "> Terms</a>
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook ">FAQ</a>
+                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
+                                title="Facebook "> Privacy </a>
+                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
+                                title="Facebook "> Terms</a>
+                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
+                                title="Facebook ">FAQ</a>
 
                         </nav>
                     </div>
@@ -214,8 +255,12 @@
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+            crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+            crossorigin="anonymous "></script>
 
         <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
