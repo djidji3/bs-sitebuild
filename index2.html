@@ -12,66 +12,90 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>bs-sitebuild</title>
     <style>
         /* google fonts */
+        
         @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
-
-        .nav-item {
+        .nav-item,
+        .display-4 {
             font-family: 'Catamaran', helvetica, arial, sans-serif;
         }
+        
         a.navbar-brand:hover {
             color: white;
         }
-
-        .h3 {
+        
+        h3,
+        h1,
+        h5 {
             font-family: 'Catamaran', helvetica, arial, sans-serif;
         }
-
+        
         .btn {
             font-family: 'Lato', helvetica, arial, sans-serif;
         }
-
+        
         .nav-link {
             font-family: 'Lato', helvetica, arial, sans-serif;
         }
-
+        
         p {
             font-family: 'Mulish', helvetica, arial, sans-serif;
         }
-
+        
         .section1 {
             background-image: url("/bs-sitebuild_img/backgroun-image.jpg");
             background: linear-gradient(to right, #ff0066 0%, #b42ae2 100%);
         }
-
+        
+        .btn-outline-light {
+            font-size: x-small;
+        }
+        
         .phone--img1 {
             width: 350px;
-            position: relative;
+            border-radius: 50px;
         }
-
+        
         .phone__inside-img1 {
             width: 305px;
             position: relative;
-            top: -1px;
-            left: -330px;
+            top: -615px;
+            left: 3px;
         }
-
+        
+        .phone--img2 {
+            width: 350px;
+            border-radius: 50px;
+            /* height: 360px; */
+        }
+        
+        .phone__inside-img2 {
+            width: 305px;
+            position: relative;
+            top: -615px;
+            left: 3px;
+        }
+        
         .section2 {
             background-color: rgb(252, 201, 88);
             padding-top: 160px;
             padding-bottom: 110px;
         }
-
+        
+        .section4 {
+            background-image: url("/bs-sitebuild_img/bg-cta.jpg");
+            height: 400px;
+        }
+        
         footer {
             font-family: 'Mulish', helvetica, arial, sans-serif;
         }
-     
     </style>
 </head>
 
@@ -81,8 +105,7 @@
     <!-- --------------------------------------NAVBAR------------------------------------------------------- -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white mb-5">
         <a class="navbar-brand text-warning" href="/index.html">Start Bootstrap</a>
-        <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse" data-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <span class="navbar-toggler-icon mr-1"></span>
         </button>
@@ -103,48 +126,48 @@
         </div>
     </nav>
 
+
     <!-- -------------------------------------------------SECTION1 csak mobilon jelenik meg---------------------------------- -->
-    <section>
-        <div class="container-fluid section1">
-            <div class="row d-lg-none text-center text-white pt-5 mt-5">
-                <div class="col-12 h3"> New Age is an app landing page that </div>
+    <section class="section1 d-lg-none mt-5">
+        <div class="container text-center">
+            <div class=" text-white  pt-5">
+                <h3 class="">New Age is an app landing page that</h3>
+                <h3>will help you beautifully showcase </h3>
+                <h3> your new mobile app, or anything else! </h3>
+            </div>
+            <div class="text-white">
+            </div>
+            <div class=" text-white">
+            </div>
 
-                <div class="col-12 h3"> will help you beautifully showcase </div>
-
-                <div class="col-12 h3"> your new mobile app, or anything else! </div>
-
-                <div class="row">
-                    <div class="col-12"><a class="btn btn-outline-light m-5 rounded-pill" href="#" role="button">START
-                            NOW FOR FREE</a> </div>
-
-                    <img src="/bs-sitebuild_img/phone.png" class="img-fluid phone--img1" alt="phone">
-                    <!--  <img src="/bs-sitebuild_img/demo-screen-1.jpg" class="img-fluid phone__inside-img1" alt="phone"> -->
+            <a class="btn btn-outline-light m-5 pl-4 pr-4 rounded-pill" href="#" role="button">START NOW FOR FREE!</a> ​
+            <div class="row mb-5 p-5">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <img src="/bs-sitebuild_img/phone.png" class="img-fluid img-thumbnail phone--img1" alt="phone">
                 </div>
             </div>
-        </div>
+
         </div>
     </section>
-
     <!-- -------------------------------------------------SECTION2 Discover resz------------------------------------------- -->
     <section class="section2" id="discover">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-12 display-4">Discover what all the</div>
                 <div class="col-12 display-4">buzz is about!</div>
-                <div class="col-12">Our app is available on any mobile device! Download now to get strarted!</div>
+                <div class="col-12">Our app is available on any mobile device! Download now</div>
+                <div class="col-12 mb-4">to get strarted!</div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
                 </div>
                 <div class="col-lg-4">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <a class="d-flex justify-content-center pr-0" href="#" role="button"><img
-                                    src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
+                        <div class="col-lg-6 mb-4">
+                            <a class="d-flex justify-content-center pr-0" href="#" role="button"><img src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
                         </div>
                         <div class="col-lg-6">
-                            <a class="d-flex justify-content-center pl-0" href="#" role="button"><img
-                                    src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
+                            <a class="d-flex justify-content-center pl-0" href="#" role="button"><img src="/bs-sitebuild_img/app-store-badge.svg" alt="app-store-google"></a>
                         </div>
                     </div>
                 </div>
@@ -155,124 +178,138 @@
 
     <!-- -------------------------------------------------SECTION3 Unlimited resz------------------------------------------------------ -->
     <section>
-        <div class="container-fluid" id="unlimited">
+        <div class="container mt-5" id="unlimited">
             <div class="row">
-                <h1 class="display-4 text-center">Unlimited Features,</h1>
-                <h1 class="display-4 text-center mb-4"> Unlimited Fun</h1>
-                <p class="lead text-center"> Check out what you can do with this app theme!</p>
-                <p class="lead text-center mb-5">________________</p>
-
+                <h1 class="col text-center p-lg-0">Unlimited Features,</h1>
+                <h1 class="col-lg text-center mb-4 p-lg-0"> Unlimited Fun</h1>
+            </div>
+            <div class="row">
+                <p class="col-12 lead text-center"> Check out what you can do with this app theme!</p>
+                <p class="col-12 text-center mb-5">_______________</p>
+            </div>
+            <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-4">
-                            <img src="/bs-sitebuild_img/phone.png" class="img-fluid img-thumbnail phone--img2"
-                                alt="phone">
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <img src="/bs-sitebuild_img/phone.png" class="img-fluid img-thumbnail phone--img2 mb-5" alt="phone">
                         </div>
-                        <div class="col-lg-8">
-                            <div class="row">
+                        <div class="col-lg-8 mt-5">
+                            <div class="row text-center">
                                 <div class="col-lg-6">
+                                    <span class="rounded mx-auto d-block">&#128241;</span>
                                     <div class="media">
-                                        <span>&#128241;</span>
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Device Mockups</h5>
+                                        <div class="media-body mb-5">
+                                            <h5 class="mt-2">Device Mockups</h5>
                                             <p>
-                                                Ready to use HTML/CSS device mockups,no Photoshop required!
+                                                Ready to use HTML/CSS device
+                                            </p>
+                                            <p>
+                                                mockups,no Photoshop required!
                                             </p>
                                         </div>
                                     </div>
+                                    <span class="rounded mx-auto d-block">&#128241;</span>
                                     <div class="media">
-                                        <span>&#128241;</span>
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Device Mockups</h5>
+                                        <div class="media-body mb-5">
+                                            <h5 class="mt-0">Flexible Use</h5>
                                             <p>
-                                                Ready to use HTML/CSS device mockups,no Photoshop required!
+                                                Ready to use HTML/CSS device
+                                            </p>
+                                            <p>
+                                                mockups,no Photoshop required!
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <span class="rounded mx-auto d-block">&#128241;</span>
                                     <div class="media">
-                                        <span>&#128241;</span>
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Device Mockups</h5>
+                                        <div class="media-body mb-5">
+                                            <h5 class="mt-0">Free to Use</h5>
                                             <p>
-                                                Ready to use HTML/CSS device mockups,no Photoshop required!
+                                                Ready to use HTML/CSS device
+                                            </p>
+                                            <p>
+                                                mockups,no Photoshop required!
                                             </p>
                                         </div>
                                     </div>
+                                    <span class="rounded mx-auto d-block">&#128241;</span>
                                     <div class="media">
-                                        <span>&#128241;</span>
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Device Mockups</h5>
+                                        <div class="media-body mb-5">
+                                            <h5 class="mt-0">Open Source</h5>
                                             <p>
-                                                Ready to use HTML/CSS device mockups,no Photoshop required!
+                                                Ready to use HTML/CSS device
+                                            </p>
+                                            <p>
+                                                mockups,no Photoshop required!
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
-            <div class="col-lg-2"></div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------SECTION4 stop resz ------------------------------------------------------ -->
+    <section class="section4">
+        <div class="container img-fluid d-block w-100">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <col-12>Stop waiting.</col-12>
+                        <col-12>Stop waiting.</col-12>
+                        <col-12><button type="button" class="btn btn-secondary">LET'S GET STARTED!</button></col-12>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
 
         </div>
+    </section>
 
-        </div>
-        </div>
+    <!-- ----------------------------------------------------FOOTER------------------------------------------------------ -->
 
-
-
-
-        <!-- ----------------------------------------------------FOOTER------------------------------------------------------ -->
-
-        <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto ">
-            <div class="container ">
-                <div class="row ">
+    <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto ">
+        <div class="container ">
+            <div class="row ">
 
 
-                    <div class="col-md-4 mb-4 mb-md-0 ">
-                        <address>
+                <div class="col-md-4 mb-4 mb-md-0 ">
+                    <address>
                             Djidji Kft 2021 All Rights Reserverd
                         </address>
 
-                        <nav class="nav justify-content-center justify-content-md-start ">
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
-                                title="Facebook "> Privacy </a>
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
-                                title="Facebook "> Terms</a>
-                            <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top "
-                                title="Facebook ">FAQ</a>
+                    <nav class="nav justify-content-center justify-content-md-start ">
+                        <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook "> Privacy </a>
+                        <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook "> Terms</a>
+                        <a href="# " class="text-white mr-2 " data-toggle="tooltip " data-placement="top " title="Facebook ">FAQ</a>
 
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </footer>
-        <!-- Optional JavaScript; choose one of the two! -->
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
-            crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
-            crossorigin="anonymous "></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
 
-        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script>
 -->
-        <script src="/js/main.js "></script>
-        <script>
-            $('#indexCarousel').carousel({
-                interval: 3000
-            });
-        </script>
+
 </body>
 
 </html>
